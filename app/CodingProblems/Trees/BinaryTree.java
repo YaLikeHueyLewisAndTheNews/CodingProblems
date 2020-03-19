@@ -1,4 +1,4 @@
-package app;
+package app.CodingProblems.Trees;
 
 public class BinaryTree{
 
@@ -53,6 +53,22 @@ public class BinaryTree{
         return root;
     }
     
+    public static BinaryTreeNode createSampleOrderedTree(){
+        BinaryTreeNode root = new BinaryTreeNode(5)
+        .withLeftTree(
+                new BinaryTreeNode(3)
+                    .withLeftTree(new BinaryTreeNode(2))
+                    .withRightTree(new BinaryTreeNode(4))
+            )
+        .withRightTree(
+            new BinaryTreeNode(8)
+                .withLeftTree(new BinaryTreeNode(6))
+                .withRightTree(new BinaryTreeNode(10))
+        );
+
+        return root;
+    }
+
     public static class BinaryTreeNode{
 
         private BinaryTreeNode parent;
