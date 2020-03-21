@@ -2,6 +2,14 @@ package app.CodingProblems.Trees;
 
 public class BinaryTree{
 
+    public BinaryTreeNode root;
+    public Integer size;
+
+    public BinaryTree(BinaryTreeNode root){
+        this.root = root;
+    }
+
+
     public static void preorderTraversal(BinaryTreeNode node){
         if(node == null){
             return;
@@ -105,6 +113,10 @@ public class BinaryTree{
 
         public int getValue(){
             return this.value;
+        }
+
+        public String toString(){
+            return String.valueOf(this.value);
         }
 
     }
